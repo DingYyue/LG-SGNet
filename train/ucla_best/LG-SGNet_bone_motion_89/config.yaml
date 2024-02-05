@@ -1,0 +1,56 @@
+# command line: main.py --config config/ucla/default_bone_motion.yaml --work-dir train/ucla/507005_ctrgcn_bone_motion --weights /21085401076/pretrained_model/pretrained_model/ucla/bm87.93_runs-58-18444.pt
+
+base_lr: 0.05
+batch_size: 16
+config: config/ucla/default_bone_motion.yaml
+device: 0
+eval_interval: 5
+feeder: feeders.feeder_ucla.Feeder
+ignore_weights: []
+log_interval: 100
+lr_decay_rate: 0.1
+model: model.ctrgcn.Model
+model_args:
+  graph: graph.ucla.Graph
+  graph_args:
+    labeling_mode: spatial
+  num_class: 10
+  num_person: 1
+  num_point: 20
+model_saved_name: ''
+nesterov: true
+num_epoch: 85
+num_worker: 32
+optimizer: SGD
+phase: train
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 50
+- 70
+test_batch_size: 64
+test_feeder_args:
+  data_path: bone motion
+  debug: false
+  label_path: val
+train_feeder_args:
+  data_path: bone motion
+  debug: false
+  label_path: train
+  normalization: false
+  random_choose: true
+  random_move: false
+  random_shift: false
+  repeat: 5
+  window_size: 52
+warm_up_epoch: 5
+weight_decay: 0.0001
+weights: /21085401076/pretrained_model/pretrained_model/ucla/bm87.93_runs-58-18444.pt
+work_dir: train/ucla/507005_ctrgcn_bone_motion
