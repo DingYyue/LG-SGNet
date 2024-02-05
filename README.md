@@ -41,7 +41,7 @@ This repo is the official implementation for <mark>LG-SGNet: LG-SGNet: Local and
   python seq_transformation.py
   
 # Pretrained Model
-[pretrained_model](https://pan.baidu.com/s/1GmmMIJKPCDXnnCSCWEWIPg?pwd=5136)
+[pretrained_model](https://pan.baidu.com/s/1bX4zcT8SMoSddUvrKReETw?pwd=u87b)
 # Training & Testing
 ### Training
 - Example: training LG-SGNet on NTU RGB+D 120 cross subject
