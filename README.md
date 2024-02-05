@@ -3,9 +3,9 @@
 This repo is the official implementation for <mark>LG-SGNet: LG-SGNet: Local and Global Self-Attention Enhanced Graph Convolutional Network for Skeleton-based Action Recognition</mark>. 
 
 # Architecture of LG-SGNet
-![image](https://github.com/DingYyue/LG-SGNet/src/framework.png)
-![image](https://github.com/DingYyue/LG-SGNet/src/LG-GCN.png)
-![image](https://github.com/DingYyue/LG-SGNet/src/LG-TCN-branch1.png)
+![image](https://github.com/DingYyue/LG-SGNet/master/src/framework.png)
+![image](https://github.com/DingYyue/LG-SGNet/master/src/LG-GCN.png)
+![image](https://github.com/DingYyue/LG-SGNet/master/src/LG-TCN-branch1.png)
 
 # Data Preparation
 ### There are 3 datasets to download:
